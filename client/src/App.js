@@ -54,7 +54,7 @@ function App() {
     setResult(null);
 
     try {
-      const response = await axios.post('http://localhost:3001/api/analyse', {
+      const response = await axios.post('https://internship-assistant-production.up.railway.app/api/analyse', {
         cvText: currentCvText,
         jobDescription,
         company,
